@@ -1,6 +1,6 @@
 package com.example.baseproject.controller;
 
-import com.example.baseproject.dto.Student;
+import com.example.baseproject.dto.StudentDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.core.JmsTemplate;
@@ -19,7 +19,7 @@ public class Producer {
     private Queue queue;
 
     @PostMapping("/message")
-    public Student sendMessage(@RequestBody Student student) {
+    public StudentDTO sendMessage(@RequestBody StudentDTO student) {
 
         try {
             ObjectMapper mapper = new ObjectMapper();

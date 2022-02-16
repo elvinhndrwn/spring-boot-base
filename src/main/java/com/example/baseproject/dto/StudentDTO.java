@@ -11,9 +11,9 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Student  implements Serializable {
+public class StudentDTO implements Serializable {
     private static final long serialVersionUID = 9099201080224663492L;
 
-    private String studentId;
+    private String id;
     private String name;
 }
