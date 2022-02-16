@@ -19,7 +19,7 @@ public class AMQConfig {
 
     @Bean
     public Queue queue() {
-        return new ActiveMQQueue("netsurfingzone-queue");
+        return new ActiveMQQueue("student-queue");
     }
 
     @Bean
