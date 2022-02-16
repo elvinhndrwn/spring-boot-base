@@ -21,6 +21,9 @@ public class StudentService implements StudentImpl {
     StudentRepository studentRepository;
 
     @Autowired
+    Producer producer;
+
+    @Autowired
     private HashOperations<String, Object, Object> redisOps;
 
     @Override
@@ -45,6 +48,7 @@ public class StudentService implements StudentImpl {
             log.info("Return data from redis cache");
             resp = new ArrayList(studentMap.values());
         }
+        producer.send(resp);
         return resp;
 
     }
