@@ -2,6 +2,7 @@ package com.example.baseproject.service;
 
 import com.example.baseproject.dto.StudentDTO;
 import com.example.baseproject.repository.StudentRepository;
+import com.example.baseproject.service.amq.Producer;
 import com.example.baseproject.service.impl.StudentImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

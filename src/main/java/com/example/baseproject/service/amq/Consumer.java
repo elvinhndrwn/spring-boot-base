@@ -1,4 +1,4 @@
-package com.example.baseproject.service;
+package com.example.baseproject.service.amq;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jms.annotation.JmsListener;
