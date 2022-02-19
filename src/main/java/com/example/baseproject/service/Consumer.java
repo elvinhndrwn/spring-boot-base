@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class Consumer {
 
-    @JmsListener(destination = "netsurfingzone-queue")
+    @JmsListener(destination = "student-queue")
     public void consumeMessage(String message) {
         log.info("Message received from activemq queue---"+message);
     }
